@@ -20,7 +20,7 @@ body {
 .topSide {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
 }
@@ -48,12 +48,14 @@ body {
     margin-top: 10vh;
     margin-bottom: 10vh;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
+    height: 80vh;
+    width: 30vw;
 }
 
 #formBlock {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 60vh;
     width: 20vw;
     align-items: center;
 }
@@ -89,7 +91,7 @@ body {
 }
 
 
-#cadastrarInput {
+#cadastrarInput, #AtualizarInput {
     border: none;
     padding: 7px;
     border-radius: 3px;
@@ -101,9 +103,16 @@ body {
     height: 6vh;
     background: linear-gradient(90deg, #28389f,#2161b5,#78add1);
     transition: 0.5s;
+    margin-top: 1vh;
 }
 
 #cadastrarInput:hover {
+    width: 17vw;
+    height: 7vh;
+    transition: 0.5s;
+}
+
+#AtualizarInput:hover {
     width: 17vw;
     height: 7vh;
     transition: 0.5s;
