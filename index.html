@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topSide">
+            <div class="formulario">
+                <p id="titulo">Cadastro</p>
+                <form id="formBlock">
+                    <div class="input-box">
+                        <label for="userInput" id="labels">Usuário</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="userInput" id="userInput">
+                        </div>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="nameInput" id="labels">Nome</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-hashtag"></i>
+                            <input type="text" name="nameInput" id="nameInput">
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="sexoInput" id="labels">Sexo</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <select name="sexo" id="sexoInput">
+                                <option value="none"></option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <input type="button" id="cadastrarInput" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+        <div class="textoCadastro">
+            <p>Pessoas cadastradas</p>
+        </div>
+        <div class="bottonSide" id="bottonSide"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
