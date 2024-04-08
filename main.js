@@ -33,7 +33,10 @@ fetch('https://jsonplaceholder.typicode.com/posts' ).then(function (response) {
         button1.innerText = "?";
         button1.classList.add("boxBut");
         button1.onclick = function() {
-            alert("Botão de interrogação clicado!");
+            document.getElementById("userInput").value = pessoa.title;
+            document.getElementById("nameInput").value = pessoa.userId;
+            document.getElementById("sexoInput").value = "feminino";
+            window.scrollTo(0, 0);
         };
 
         var button2 = document.createElement("button");
@@ -58,3 +61,18 @@ fetch('https://jsonplaceholder.typicode.com/posts' ).then(function (response) {
 // There was an error
     console.warn('Something went wrong.' , err);
 });
+
+document.getElementById("cadastrarInput").onclick = () => {
+    alert("Cadastro enviado!");
+}
+
+document.getElementById("AtualizarInput").onclick = () => {
+    let user = document.getElementById("userInput").value;
+    if(user == ""){
+        alert("Campo vazio!");
+    }
+
+    if(user != ""){
+        alert("Dados de " + user + " atualizados!");
+    }
+}
